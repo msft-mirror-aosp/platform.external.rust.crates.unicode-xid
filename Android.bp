@@ -1,0 +1,6 @@
+rust_library_rlib {
+    name: "libunicode_xid",
+    crate_name: "unicode_xid",
+    srcs: ["src/lib.rs"],
+    host_supported: true,
+}
