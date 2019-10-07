@@ -1,6 +1,10 @@
 rust_library_rlib {
     name: "libunicode_xid",
+    host_supported: true,
     crate_name: "unicode_xid",
     srcs: ["src/lib.rs"],
-    host_supported: true,
+    edition: "2015",
+    features: [
+        "default",
+    ],
 }
