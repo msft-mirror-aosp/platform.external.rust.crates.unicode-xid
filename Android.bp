@@ -10,3 +10,15 @@ rust_library_rlib {
         "default",
     ],
 }
+
+rust_test {
+    name: "unicode-xid_test_src_lib",
+    host_supported: true,
+    crate_name: "unicode_xid",
+    srcs: ["src/lib.rs"],
+    relative_install_path: "rust/unicode-xid",
+    edition: "2015",
+    features: [
+        "default",
+    ],
+}
