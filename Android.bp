@@ -16,7 +16,6 @@ rust_test {
     name: "unicode-xid_device_tests_unicode_xid",
     crate_name: "unicode_xid",
     srcs: ["src/lib.rs"],
-    // relative_install_path not used for device test
     test_suites: ["general-tests"],
     auto_gen_config: true,
     edition: "2015",
@@ -34,7 +33,6 @@ rust_test_host {
     name: "unicode-xid_host_tests_unicode_xid",
     crate_name: "unicode_xid",
     srcs: ["src/lib.rs"],
-    relative_install_path: "unicode-xid_tests",
     test_suites: ["general-tests"],
     auto_gen_config: true,
     edition: "2015",
