@@ -21,11 +21,6 @@ rust_test {
     features: [
         "default",
     ],
-    rlibs: [
-        "libstd.static",
-        "libtest.static",
-        "libterm.static",
-    ],
 }
 
 rust_test_host {
