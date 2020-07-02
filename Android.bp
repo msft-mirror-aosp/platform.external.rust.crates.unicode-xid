@@ -16,16 +16,10 @@ rust_test {
     name: "unicode-xid_device_tests_unicode_xid",
     crate_name: "unicode_xid",
     srcs: ["src/lib.rs"],
-    test_suites: ["general-tests"],
-    auto_gen_config: true,
+    test_suites: ["device-tests"],
     edition: "2015",
     features: [
         "default",
-    ],
-    rlibs: [
-        "libstd.static",
-        "libtest.static",
-        "libterm.static",
     ],
 }
 
