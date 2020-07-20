@@ -5,11 +5,11 @@
 
     <target_preparer class="com.android.tradefed.targetprep.PushFilePreparer">
         <option name="cleanup" value="true" />
-        <option name="push" value="unicode-xid_device_tests_unicode_xid->/data/local/tmp/unicode-xid_device_tests_unicode_xid" />
+        <option name="push" value="unicode-xid_device_test_src_lib->/data/local/tmp/unicode-xid_device_test_src_lib" />
     </target_preparer>
 
     <test class="com.android.tradefed.testtype.rust.RustBinaryTest" >
         <option name="test-device-path" value="/data/local/tmp" />
-        <option name="module-name" value="unicode-xid_device_tests_unicode_xid" />
+        <option name="module-name" value="unicode-xid_device_test_src_lib" />
     </test>
 </configuration>
