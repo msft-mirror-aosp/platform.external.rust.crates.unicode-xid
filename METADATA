@@ -6,8 +6,8 @@ third_party {
     value: "https://crates.io/crates/unicode-xid"
   }
   url {
-    type: GIT
-    value: "https://github.com/unicode-rs/unicode-xid"
+    type: ARCHIVE
+    value: "https://static.crates.io/crates/unicode-xid/unicode-xid-0.2.1.crate"
   }
   version: "0.2.1"
   license_type: NOTICE
