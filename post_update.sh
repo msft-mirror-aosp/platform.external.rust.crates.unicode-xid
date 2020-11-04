@@ -8,5 +8,3 @@ set -e
 
 # copy old test xml config files.
 cp -a -n $2/AndroidTest*.xml $1/
-
-# TODO: fix up Android.bp
