@@ -11,6 +11,7 @@ index 01c81e2..927fc9a 100644
 +// #[cfg(test)]
 +// ANDROID: Unconditionally use std to allow building as a dylib.
 +// #[macro_use]
++#[cfg(android_dylib)]
  extern crate std;
  
  #[cfg(feature = "bench")]
