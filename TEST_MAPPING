@@ -2,275 +2,59 @@
 {
   "imports": [
     {
-      "path": "external/rust/crates/anyhow"
-    },
-    {
-      "path": "external/rust/crates/arbitrary"
-    },
-    {
-      "path": "external/rust/crates/argh"
-    },
-    {
-      "path": "external/rust/crates/base64"
-    },
-    {
-      "path": "external/rust/crates/bitflags"
-    },
-    {
-      "path": "external/rust/crates/bytes"
-    },
-    {
-      "path": "external/rust/crates/either"
-    },
-    {
-      "path": "external/rust/crates/futures-util"
-    },
-    {
-      "path": "external/rust/crates/jni"
-    },
-    {
-      "path": "external/rust/crates/libm"
-    },
-    {
-      "path": "external/rust/crates/libsqlite3-sys"
-    },
-    {
-      "path": "external/rust/crates/oid-registry"
-    },
-    {
-      "path": "external/rust/crates/rand_chacha"
-    },
-    {
-      "path": "external/rust/crates/serde"
-    },
-    {
-      "path": "external/rust/crates/serde-xml-rs"
-    },
-    {
-      "path": "external/rust/crates/serde_cbor"
-    },
-    {
-      "path": "external/rust/crates/slab"
-    },
-    {
-      "path": "external/rust/crates/tinytemplate"
-    },
-    {
-      "path": "external/rust/crates/tinyvec"
-    },
-    {
-      "path": "external/rust/crates/tokio"
-    },
-    {
-      "path": "external/rust/crates/tokio-test"
-    },
-    {
-      "path": "external/rust/crates/unicode-bidi"
-    },
-    {
-      "path": "external/rust/crates/url"
+      "path": "external/rust/crates/zeroize"
     }
   ],
   "presubmit": [
     {
-      "name": "VtsAidlDiceDemoteTargetTest"
+      "name": "libkmr_derive_test"
     },
     {
-      "name": "VtsAidlDiceTargetTest"
+      "name": "libkmr_hal_test"
     },
     {
-      "name": "ZipFuseTest"
+      "name": "libuwb_adaptation_jni_tests"
     },
     {
-      "name": "apkdmverity.test"
+      "name": "libuwb_core_tests"
     },
     {
-      "name": "authfs_device_test_src_lib"
+      "name": "libuwb_uci_jni_rust_tests"
     },
     {
-      "name": "diced_open_dice_cbor_test"
-    },
-    {
-      "name": "diced_sample_inputs_test"
-    },
-    {
-      "name": "diced_test"
-    },
-    {
-      "name": "diced_utils_test"
-    },
-    {
-      "name": "diced_vendor_test"
-    },
-    {
-      "name": "doh_unit_test"
-    },
-    {
-      "name": "keystore2_client_tests"
-    },
-    {
-      "name": "keystore2_crypto_test_rust"
-    },
-    {
-      "name": "keystore2_km_compat_test"
-    },
-    {
-      "name": "keystore2_legacy_blobs_test"
-    },
-    {
-      "name": "keystore2_selinux_concurrency_test"
-    },
-    {
-      "name": "keystore2_selinux_test"
-    },
-    {
-      "name": "keystore2_test"
-    },
-    {
-      "name": "keystore2_test_utils_test"
-    },
-    {
-      "name": "keystore2_vintf_test"
-    },
-    {
-      "name": "legacykeystore_test"
-    },
-    {
-      "name": "libapexutil_rust.test"
-    },
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "libcert_request_validator_tests"
-    },
-    {
-      "name": "libidsig.test"
-    },
-    {
-      "name": "librustutils_test"
-    },
-    {
-      "name": "libtombstoned_client_rust_test"
-    },
-    {
-      "name": "microdroid_manager_test"
-    },
-    {
-      "name": "rustBinderTest"
+      "name": "libuwb_uci_packet_tests"
     },
     {
       "name": "unicode-xid_test_src_lib"
     },
     {
       "name": "unicode-xid_test_tests_exhaustive_tests"
-    },
-    {
-      "name": "virtualizationservice_device_test"
     }
   ],
   "presubmit-rust": [
     {
-      "name": "VtsAidlDiceDemoteTargetTest"
+      "name": "libkmr_derive_test"
     },
     {
-      "name": "VtsAidlDiceTargetTest"
+      "name": "libkmr_hal_test"
     },
     {
-      "name": "ZipFuseTest"
+      "name": "libuwb_adaptation_jni_tests"
     },
     {
-      "name": "apkdmverity.test"
+      "name": "libuwb_core_tests"
     },
     {
-      "name": "authfs_device_test_src_lib"
+      "name": "libuwb_uci_jni_rust_tests"
     },
     {
-      "name": "diced_open_dice_cbor_test"
-    },
-    {
-      "name": "diced_sample_inputs_test"
-    },
-    {
-      "name": "diced_test"
-    },
-    {
-      "name": "diced_utils_test"
-    },
-    {
-      "name": "diced_vendor_test"
-    },
-    {
-      "name": "doh_unit_test"
-    },
-    {
-      "name": "keystore2_client_tests"
-    },
-    {
-      "name": "keystore2_crypto_test_rust"
-    },
-    {
-      "name": "keystore2_km_compat_test"
-    },
-    {
-      "name": "keystore2_legacy_blobs_test"
-    },
-    {
-      "name": "keystore2_selinux_concurrency_test"
-    },
-    {
-      "name": "keystore2_selinux_test"
-    },
-    {
-      "name": "keystore2_test"
-    },
-    {
-      "name": "keystore2_test_utils_test"
-    },
-    {
-      "name": "keystore2_vintf_test"
-    },
-    {
-      "name": "legacykeystore_test"
-    },
-    {
-      "name": "libapexutil_rust.test"
-    },
-    {
-      "name": "libapkverify.integration_test"
-    },
-    {
-      "name": "libapkverify.test"
-    },
-    {
-      "name": "libcert_request_validator_tests"
-    },
-    {
-      "name": "libidsig.test"
-    },
-    {
-      "name": "librustutils_test"
-    },
-    {
-      "name": "libtombstoned_client_rust_test"
-    },
-    {
-      "name": "microdroid_manager_test"
-    },
-    {
-      "name": "rustBinderTest"
+      "name": "libuwb_uci_packet_tests"
     },
     {
       "name": "unicode-xid_test_src_lib"
     },
     {
       "name": "unicode-xid_test_tests_exhaustive_tests"
-    },
-    {
-      "name": "virtualizationservice_device_test"
     }
   ]
 }
