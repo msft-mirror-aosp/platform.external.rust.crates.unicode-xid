@@ -3,27 +3,18 @@
   "imports": [
     {
       "path": "external/rust/crates/zeroize"
+    },
+    {
+      "path": "external/uwb/src"
+    },
+    {
+      "path": "system/keymint/derive"
+    },
+    {
+      "path": "system/keymint/hal"
     }
   ],
   "presubmit": [
-    {
-      "name": "libkmr_derive_test"
-    },
-    {
-      "name": "libkmr_hal_test"
-    },
-    {
-      "name": "libuwb_adaptation_jni_tests"
-    },
-    {
-      "name": "libuwb_core_tests"
-    },
-    {
-      "name": "libuwb_uci_jni_rust_tests"
-    },
-    {
-      "name": "libuwb_uci_packet_tests"
-    },
     {
       "name": "unicode-xid_test_src_lib"
     },
@@ -32,24 +23,6 @@
     }
   ],
   "presubmit-rust": [
-    {
-      "name": "libkmr_derive_test"
-    },
-    {
-      "name": "libkmr_hal_test"
-    },
-    {
-      "name": "libuwb_adaptation_jni_tests"
-    },
-    {
-      "name": "libuwb_core_tests"
-    },
-    {
-      "name": "libuwb_uci_jni_rust_tests"
-    },
-    {
-      "name": "libuwb_uci_packet_tests"
-    },
     {
       "name": "unicode-xid_test_src_lib"
     },
