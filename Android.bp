@@ -51,6 +51,8 @@ rust_library {
         "//apex_available:platform",
         "//apex_available:anyapex",
     ],
+    product_available: true,
+    vendor_available: true,
 }
 
 rust_test {
